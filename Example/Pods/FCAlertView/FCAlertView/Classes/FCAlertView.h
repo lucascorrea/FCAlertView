@@ -41,9 +41,7 @@
     NSString *alertType;
     
     // Frames
-    
-    CGRect alertViewFrame;
-    CGRect currentAVCFrames;
+  
     CGRect descriptionLabelFrames;
     
     // Alert AudioPlayer
@@ -91,6 +89,9 @@
 @property NSInteger numberOfButtons;
 @property NSInteger autoHideSeconds;
 @property CGFloat cornerRadius;
+
+@property (nonatomic, assign) CGRect alertViewFrame;
+@property (nonatomic, assign) CGRect currentAVCFrames;
 
 @property BOOL dismissOnOutsideTouch;
 @property BOOL hideAllButtons;
