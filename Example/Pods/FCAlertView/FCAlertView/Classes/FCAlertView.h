@@ -28,7 +28,6 @@
     // AlertView & Contents
     
     UIView *alertView;
-    UIView *alertViewContents;
     CAShapeLayer *circleLayer;
     
     // Customizations made to UI
@@ -92,6 +91,7 @@
 
 @property (nonatomic, assign) CGRect alertViewFrame;
 @property (nonatomic, assign) CGRect currentAVCFrames;
+@property (nonatomic, retain) UIView *alertViewContents;
 
 @property BOOL dismissOnOutsideTouch;
 @property BOOL hideAllButtons;
